@@ -1,0 +1,208 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  background-color: #89cff0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-animation-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+  -webkit-animation-iteration-count: 1 !important;
+          animation-iteration-count: 1 !important;
+  -webkit-transition-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+.buttons {
+  margin-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.open {
+  width: 150px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 1rem;
+  -webkit-transition: 500ms ease-out;
+  transition: 500ms ease-out;
+}
+.buttons button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  font-weight: 600;
+}
+
+.modal {
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  border-radius: 0.7rem;
+  width: 80vw;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.close {
+  position: absolute;
+  right: 4rem;
+  border: none;
+  background-color: #fff;
+  font-size: 1.2rem;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+.close:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  font-weight: 600;
+}
+
+.texts {
+  text-align: center;
+}
+
+.heading {
+  margin-top: 6rem;
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.heading ~ p {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #bebebe;
+  margin-bottom: 0.5rem;
+}
+
+.mail-input {
+  width: 200px;
+  border: none;
+  background-color: #d3d3d3;
+  height: 2.5rem;
+  border-radius: 0.2rem;
+}
+.mail-input:focus {
+  border: none;
+  border-radius: 0.2rem;
+  outline: 1px solid black;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #bebebe;
+}
+
+.inputs-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+}
+
+.input-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.submit {
+  width: 100px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.submit:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+.hidden {
+  display: none;
+}

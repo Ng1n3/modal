@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- Font Link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Modal Tutorial</title>
+	</head>
+	<body>
+		<div class="buttons">
+			<button class="open">modal 1</button>
+			<button class="open">modal 2</button>
+			<button class="open">modal 3</button>
+		</div>
+
+		<div class="modal hidden">
+			<button class="close">Close [ &times; ]</button>
+			<div class="texts">
+				<h1 class="heading">Get the Good Stuffs.</h1>
+				<p>Email Address<sup>*</sup></p>
+				<input type="email" class="mail-input" />
+				<p>Newsletter<sup>*</sup></p>
+				<div class="inputs-container">
+					<div class="input-inner">
+						<input type="checkbox" class="mail" />
+						<label for="women" class="checkbox-text">Women</label>
+					</div>
+					<div class="input-inner">
+						<input type="checkbox" class="mail" />
+						<label for="men" class="checkbox-text">Men</label>
+					</div>
+				</div>
+				<button class="submit">Submit</button>
+			</div>
+		</div>
+        <div class="overlay hidden"></div>
+        <script src="app.js"></script>
+	</body>
+
+</html>
